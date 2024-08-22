@@ -1,6 +1,7 @@
 package br.com.meuApredizado.principal;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import br.com.meuApredizado.modelos.Filme;
 import br.com.meuApredizado.modelos.Serie;
@@ -31,6 +32,22 @@ public class PrincipalComListas {
             }
 
         }
+        
+        ArrayList<String> buscaPorArtista = new ArrayList<String>();
+        buscaPorArtista.add("Adam Sandler");
+        buscaPorArtista.add("Claudia");
+        buscaPorArtista.add("Paulinho Gogó");
+        
+        
+        Collections.sort(buscaPorArtista);
+        System.out.println("Depois da Ordenação");
+        System.out.println(buscaPorArtista);
+        
+        Collections.sort(lista);
+        System.out.println(lista);
+        
+
+        
     }
 
 }
